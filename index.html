@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Homepage</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="footer.css">
+  <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    .image-box img,
+    .footer-item img {
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    .image-box:hover img,
+    .footer-item:hover img {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body id="index">
+
+  <div class="navbar">
+    <div class="navbar-left">
+      <div class="navbar-logo">
+        <a href="index.html">
+          <img src="./images/NaturLOGO.png" alt="Logo">
+        </a>
+      </div>
+    </div>
+    <div class="navbar-links">
+      <div><a href="index.html">HOME</a></div>
+      <div><a href="oops.html">EXHIBITIONS</a></div>
+      <div><a href="oops.html">MOLS LAB</a></div>
+      <div><a href="oops.html">ABOUT</a></div>
+    </div>
+    <div class="navbar-right">
+      <div class="navbar-icon flag-icon" id="flag-icon">
+        <img src="./images/flags/us.svg" alt="American Flag" id="flag-image">
+      </div>
+      <div class="navbar-icon icon-outline">
+        <img src="./images/flags/cart.svg" alt="Cart Icon" id="cart-icon">
+      </div>
+      <div class="mobile-menu-toggle">☰</div>
+    </div>
+  </div>
+
+  <div class="hero" style="background: url('./images/AUback.png') center top no-repeat; background-size: contain;">
+    <div class="hero-left">
+      <div class="text-block full">NATURHISTORISK</div>
+      <div class="text-block sixty">MUSEUM</div>
+      <div class="text-block seventy">AARHUS</div>
+      <div style="height: 200px;"></div>
+    </div>
+    <div class="hero-right">
+      <div class="line"></div>
+      <div class="text-block-right forty-right au-logo-font">DENMARK</div>
+      <div class="text-block-right seventy-right au-passata-light">AARHUS UNIVERSITY</div>
+      <div class="line"></div>
+      <div class="text-block-right eighty-right au-logo-font">INFORMATION</div>
+      <div class="text-block-right ninety-right au-passata-light">
+        <a href="tel:+4586129777" class="phone-link au-passata-light">Tlf. 86 12 97 77</a>
+      </div>
+      <div class="text-block-right ninety-right">
+        <a href="https://www.google.com/maps?q=Wilhelm+Meyers+Allé+10,+8000+Aarhus+C" target="_blank" class="address-link">
+          Wilhelm Meyers Allé 10, 8000 Aarhus C
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title">HAPPENING NOW</div>
+
+  <div class="carousel-container">
+    <div class="carousel-wrapper">
+      <div class="image-box">
+        <a href="oops.html">
+          <img src="./images/oops/ECO/main.gif" alt="ECO">
+        </a>
+        <p class="image-caption">Tag along with Vimse on an adventure in the city and meet lots of exciting animals.</p>
+        <a href="oops.html" class="explore-link">Explore more</a>
+      </div>
+      <div class="image-box">
+        <img src="./images/happening/GOAT.png" alt="GOAT">
+        <p class="image-caption">Tag along with Vimse on an adventure in the city and meet lots of exciting animals.</p>
+        <a href="#" class="explore-link">Explore more</a>
+      </div>
+      <div class="image-box">
+        <img src="./images/happening/image14.Jpg" alt="Oblev">
+        <p class="image-caption">Tag along with Vimse on an adventure in the city and meet lots of exciting animals.</p>
+        <a href="#" class="explore-link">Explore more</a>
+      </div>
+      <div class="image-box">
+        <img src="./images/happening/sara.Jpg" alt="Sara">
+        <p class="image-caption">Tag along with Vimse on an adventure in the city and meet lots of exciting animals.</p>
+        <a href="#" class="explore-link">Explore more</a>
+      </div>
+      <div class="image-box">
+        <img src="./images/happening/herds.Jpg" alt="Herds">
+        <p class="image-caption">Tag along with Vimse on an adventure in the city and meet lots of exciting animals.</p>
+        <a href="#" class="explore-link">Explore more</a>
+      </div>
+    </div>
+    <button class="carousel-button prev">❮</button>
+    <button class="carousel-button next">❯</button>
+  </div>
+
+  <div class="section-title">SEASONAL EXHIBITS</div>
+
+  <div class="split-section">
+    <div class="split-item">
+      <img src="./images/Seasonal/beetles.png" alt="BEETLES" class="split-image">
+      <div class="split-content">
+        <h2 class="split-title">BEETLES</h2>
+        <p class="split-text">A time-limited, possibly groundbreaking exhibition wherein, quite remarkably, you are cordially invited to witness the curated convergence of approximately 3 million of the same bugs, identical in every conceivable way, redundantly showcased in a pattern of near-ritualistic sameness, humming with the echo of observational repetition, for purposes not entirely unrelated to experiential redundancy and the essence of semi-curated monotony."</p>
+      </div>
+    </div>
+    <div class="vertical-line"></div>
+    <div class="split-item">
+      <img src="./images/Seasonal/crispr.Jpg" alt="CRISPR" class="split-image">
+      <div class="split-content">
+        <h2 class="split-title">CRISPR</h2>
+        <p class="split-text">A limited-time genetic phenomenon, CRISPR was first discovered in ancient bacterial “soap operas,” where immune memories were catalogued in tiny DNA scrapbooks. CRISPR arrays gather under laboratory fluorescence to emit gene-editing instructions only detectable by PCR machines. In E. coli, most defensive responses are classified as CRISPR events during phage season. The Cas9 protein rotates clockwise when unbound, a behavior first documented in 2012.
+
+</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title">EXPLORE MORE</div>
+
+  <div class="footer-grid">
+    <div class="footer-item">
+      <img src="./images/Explore/Opening.png" alt="Placeholder">
+      <p class="footer-caption"><strong>OPENING HOURS</strong></p>
+      <p class="footer-subcaption">Find our opening hours and information about admission, annual passes, etc.</p>
+    </div>
+    <div class="footer-item">
+      <img src="./images/Explore/Donos.png" alt="Placeholder">
+      <p class="footer-caption"><strong>DONATIONS</strong></p>
+      <p class="footer-subcaption">Support the museum and get a tax benefit.</p>
+    </div>
+    <div class="footer-item">
+      <img src="./images/Explore/rewilding.Jpg" alt="Placeholder">
+      <p class="footer-caption"><strong>REWILDING</strong></p>
+      <p class="footer-subcaption">We have released wild Exmoor ponies into the Mols Laboratory's areas.</p>
+    </div>
+    <div class="footer-item">
+      <img src="./images/Explore/Wolves.png" alt="Placeholder">
+      <p class="footer-caption"><strong>WOLVES IN DENMARK</strong></p>
+      <p class="footer-subcaption">New online map at ulveatlas.dk provides the answer.</p>
+    </div>
+  </div>
+
+  <!-- Footer Placeholder (External HTML will load here) -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Footer Script: Load external footer.html -->
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>

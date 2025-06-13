@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OOPS Exhibition</title>
+
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="oops.css">
+  <link rel="stylesheet" href="footer.css">
+
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-b6x0nFLpmZoZXvZK8XK3AfvK/wbncV9vqBa0Zs9HgKLgYo+Yd6RjyzfPYYF6It0AfDKOnVzzXv青QCHUYd3UV7Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Lightbox CSS -->
+  <style>
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 2000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      overflow: auto;
+    }
+    
+    .lightbox-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+    }
+    
+    .lightbox-img {
+      max-width: 90vw;
+      max-height: 90vh;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      transition: transform 0.3s cubic-bezier(.4,2,.6,1);
+      transform: scale(1);
+    }
+    
+    .close-lightbox {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    
+    .thumbnail-gallery img,
+    .footer-item img,
+    .bigbang-thumbnails img {
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .thumbnail-gallery img:hover,
+    .footer-item:hover img,
+    .bigbang-thumbnails img:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body id="oops">
+
+  <!-- Navbar (matches homepage exactly) -->
+  <div class="navbar">
+    <div class="navbar-left">
+      <div class="navbar-logo">
+        <a href="index.html">
+          <img src="./images/NaturLOGO.png" alt="Logo">
+        </a>
+      </div>
+    </div>
+    <div class="navbar-links">
+      <div><a href="index.html">HOME</a></div>
+      <div><a href="oops.html">EXHIBITIONS</a></div>
+      <div><a href="oops.html">MOLS LAB</a></div>
+      <div><a href="oops.html">ABOUT</a></div>
+    </div>
+    <div class="navbar-right">
+      <div class="navbar-icon flag-icon" id="flag-icon">
+        <img src="./images/flags/us.svg" alt="American Flag" id="flag-image">
+      </div>
+      <div class="navbar-icon icon-outline">
+        <img src="./images/flags/cart.svg" alt="Cart Icon" id="cart-icon">
+      </div>
+      <div class="mobile-menu-toggle">☰</div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-image">
+      <img src="./images/oops/background.png" alt="Hero Exhibition Image" />
+      <div class="explore-button inverted">OOPS EXHIBITION</div>
+      <div class="explore-button">Explore OOPS</div>
+    </div>
+  </section>
+  <!-- Ecomorph Section -->
+  <section class="ecomorph-section">
+    <div class="ecomorph-container">
+      <div class="ecomorph-left">
+        <div class="ecomorph-image">
+          <img src="./images/oops/ECO/main.gif" alt="Ecomorph Images" />
+        </div>
+        <div class="thumbnail-gallery">
+          <img src="./images/oops/ECO/Intro.png" onclick="openLightbox(this.src)" />
+          <img src="./images/oops/ECO/Lab.png" onclick="openLightbox(this.src)" />
+          <img src="./images/oops/ECO/Environment selection.jpg" onclick="openLightbox(this.src)" />
+          <img src="./images/Team.jpg" onclick="openLightbox(this.src)" />
+        </div>
+        <div style="margin-top: 16px;">
+          <a href="./ecomorph_canvas_game/index.html" class="explore-button" style="display: inline-block; text-decoration: none;">
+            Click this to play a short demo
+          </a>
+        </div>
+      </div>
+      <div class="ecomorph-text">
+        <h2>ECOMORPH</h2>
+        <p>
+          Ecomorph is a survival-based game where you take control of an animal placed in an unfamiliar environment. Your goal is to modify and adapt the creature's stats—such as speed, strength, camouflage, or metabolism—to help it survive and evolve.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="line"></div>
+
+  <!-- Big Bang Section -->
+  <section class="bigbang-section">
+    <div class="bigbang-container">
+      <div class="bigbang-text">
+        <h2>The Big Bang</h2>
+        <p>
+          Imagine an ultra-wide, ring-shaped screen that surrounds you with a seamless panoramic display—like standing inside a digital arena.
+        </p>
+      </div>
+      <div class="bigbang-right">
+        <div class="bigbang-carousel">
+          <img src="./images/oops/BigBang/image 8.png" alt="Big Bang" />
+        </div>
+        <div class="bigbang-thumbnails">
+          <img src="./images/oops/BigBang/IMG_4546-1.png" onclick="openLightbox(this.src)" />
+          <img src="./images/oops/BigBang/IMG_4553 1.png" onclick="openLightbox(this.src)" />
+          <img src="./images/oops/BigBang/IMG_4555.png" onclick="openLightbox(this.src)" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+    <div class="lightbox-content">
+      <img id="lightbox-img" class="lightbox-img" src="" alt="Enlarged view">
+    </div>
+  </div>
+
+  <!-- Footer Placeholder (External HTML will load here) -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Footer Script: Load external footer.html -->
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+    
+    // Lightbox functionality
+    function openLightbox(imgSrc) {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      lightboxImg.src = imgSrc;
+      lightbox.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+    
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+    
+    // Close lightbox when clicking outside the image
+    window.onclick = function(event) {
+      const lightbox = document.getElementById('lightbox');
+      if (event.target == lightbox) {
+        closeLightbox();
+      }
+    }
+    
+    // Close lightbox with ESC key
+    document.onkeydown = function(evt) {
+      evt = evt || window.event;
+      if (evt.key === "Escape") {
+        closeLightbox();
+      }
+    };
+  </script>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

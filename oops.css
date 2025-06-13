@@ -6,6 +6,11 @@ body {
   overflow-x: hidden;
 }
 
+.alexlilanime {
+    width: 20%;
+    height: 20%;
+}
+
 /* Navbar Styles - Desktop */
 .navbar {
     display: flex;
@@ -145,6 +150,13 @@ body {
     left: 0;
     background: #fff !important;
     color: #003D73 !important;
+}
+
+.demotext {
+    font-size: 2.5rem;
+    color: #003D73;
+    margin-bottom: 1rem;
+    font-family: 'League Gothic', sans-serif;
 }
 
 .explore-button:not(.inverted) {

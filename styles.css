@@ -235,7 +235,7 @@ body#index .hero {
 
 .carousel-button {
     position: absolute;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
     background: rgba(0, 0, 0, 0.5);
     color: white;
@@ -540,6 +540,7 @@ body#index .hero {
     }
 
     .carousel-button {
+        top: 35%;
         padding: 0.3rem 0.8rem;
         font-size: 1.2rem;
     }

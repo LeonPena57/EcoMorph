@@ -203,9 +203,9 @@ body#index .hero {
 .image-box img {
     width: 100%;
     height: auto;
-    aspect-ratio: auto;
+    aspect-ratio: 4 / 3;
     display: block;
-    object-fit: contain;
+    object-fit: cover;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 

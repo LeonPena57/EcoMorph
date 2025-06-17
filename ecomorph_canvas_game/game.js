@@ -329,3 +329,7 @@ function gameLoop() {
 }
 preloadImages();
 gameLoop();
+
+document.getElementById('backBtn').onclick = function() {
+  window.history.back();
+};

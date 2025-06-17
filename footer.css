@@ -42,6 +42,7 @@
 }
 
 .footer-logos img.main-logo {
+  margin-left: -10px;
   height: 60px;
 }
 
@@ -186,6 +187,10 @@ a[href="index.html"]:focus .main-logo {
 @media (max-width: 768px) {
     .navbar {
         padding: 1rem;
+    }
+
+    .footer-logos img.main-logo {
+        margin-left: -5px;
     }
 
     .navbar-logo img {
